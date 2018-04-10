@@ -1,0 +1,162 @@
+2018-03-26 09:41:49.393 [main] INFO  com.Application - Starting Application on MICROSO-J8B12CL with PID 14044 (F:\ideaProject\demo\target\classes started by User in F:\ideaProject\demo)
+2018-03-26 09:41:49.428 [main] INFO  com.Application - No active profile set, falling back to default profiles: default
+2018-03-26 09:41:49.965 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-03-26 09:41:50.147 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63cf2c03: startup date [Mon Mar 26 09:41:50 CST 2018]; root of context hierarchy
+2018-03-26 09:41:56.948 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eabb26b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-26 09:41:57.370 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-03-26 09:41:57.383 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-03-26 09:41:57.384 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-03-26 09:41:57.485 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-03-26 09:41:57.485 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7338 ms
+2018-03-26 09:41:57.759 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-26 09:41:57.764 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-26 09:41:57.765 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-26 09:41:57.765 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-26 09:41:57.766 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-26 09:41:57.766 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'SessionFilter' to urls: [/work]
+2018-03-26 09:41:58.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63cf2c03: startup date [Mon Mar 26 09:41:50 CST 2018]; root of context hierarchy
+2018-03-26 09:41:58.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:41:58.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo],methods=[GET]}" onto public java.lang.String com.controller.IndexController.html(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:41:58.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logintest],methods=[GET]}" onto public java.lang.String com.controller.IndexController.logintest(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-03-26 09:41:58.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login1],methods=[GET]}" onto public java.lang.String com.controller.IndexController.login(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:41:58.767 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test1],methods=[GET]}" onto public java.lang.String com.controller.IndexController.test1(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:41:58.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getall]}" onto java.util.List<com.bean.UserInfo> com.controller.UserController.getall()
+2018-03-26 09:41:58.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/logintest]}" onto public java.lang.String com.controller.UserController.login(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-03-26 09:41:58.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/saveuser]}" onto void com.controller.UserController.saveuser(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:41:58.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto int com.demo.demo.home()
+2018-03-26 09:41:58.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:41:58.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-26 09:41:58.801 [main] INFO  o.s.w.s.config.annotation.WebMvcConfigurerAdapter - Adding welcome page: class path resource [static/index.html]
+2018-03-26 09:41:58.814 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-03-26 09:41:58.828 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-26 09:41:58.828 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-26 09:41:58.888 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-26 09:41:59.671 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-26 09:41:59.708 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-03-26 09:41:59.730 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-26 09:41:59.751 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2018-03-26 09:41:59.763 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-26 09:41:59.778 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-03-26 09:41:59.790 [main] INFO  com.Application - Started Application in 11.381 seconds (JVM running for 13.473)
+2018-03-26 09:42:00.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:05.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:10.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:15.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:20.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:25.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:30.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:35.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:40.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:45.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:50.003 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:42:55.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:43:00.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:43:05.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:43:06.283 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-26 09:43:06.283 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-26 09:43:06.303 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-03-26 09:43:10.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:43:15.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:43:15.088 [http-nio-8080-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-03-26 09:43:15.181 [http-nio-8080-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-03-26 09:43:15.181 [http-nio-8080-exec-2] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-03-26 09:43:15.181 [http-nio-8080-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-03-26 09:43:15.181 [http-nio-8080-exec-2] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-03-26 09:43:15.184 [http-nio-8080-exec-2] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-03-26 09:43:15.184 [http-nio-8080-exec-2] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-03-26 09:43:20.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:45:45.289 [main] INFO  com.Application - Starting Application on MICROSO-J8B12CL with PID 9852 (F:\ideaProject\demo\target\classes started by User in F:\ideaProject\demo)
+2018-03-26 09:45:45.292 [main] INFO  com.Application - No active profile set, falling back to default profiles: default
+2018-03-26 09:45:45.521 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-03-26 09:45:45.547 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7344424a: startup date [Mon Mar 26 09:45:45 CST 2018]; root of context hierarchy
+2018-03-26 09:45:50.580 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$329942a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-26 09:45:50.899 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-03-26 09:45:50.907 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-03-26 09:45:50.908 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+2018-03-26 09:45:50.983 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-03-26 09:45:50.983 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5436 ms
+2018-03-26 09:45:51.164 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-26 09:45:51.168 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-26 09:45:51.169 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-26 09:45:51.169 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-26 09:45:51.169 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-26 09:45:51.169 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'SessionFilter' to urls: [/work]
+2018-03-26 09:45:51.824 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7344424a: startup date [Mon Mar 26 09:45:45 CST 2018]; root of context hierarchy
+2018-03-26 09:45:51.879 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.controller.IndexController.index(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:45:51.880 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo],methods=[GET]}" onto public java.lang.String com.controller.IndexController.html(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:45:51.880 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login1],methods=[GET]}" onto public java.lang.String com.controller.IndexController.login(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:45:51.880 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logintest],methods=[GET]}" onto public java.lang.String com.controller.IndexController.logintest(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-03-26 09:45:51.880 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test1],methods=[GET]}" onto public java.lang.String com.controller.IndexController.test1(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:45:51.882 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getall]}" onto java.util.List<com.bean.UserInfo> com.controller.UserController.getall()
+2018-03-26 09:45:51.882 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/saveuser]}" onto void com.controller.UserController.saveuser(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:45:51.882 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/logintest]}" onto public java.lang.String com.controller.UserController.login(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-03-26 09:45:51.883 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto int com.demo.demo.home()
+2018-03-26 09:45:51.885 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-26 09:45:51.885 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-26 09:45:51.890 [main] INFO  o.s.w.s.config.annotation.WebMvcConfigurerAdapter - Adding welcome page: class path resource [static/index.html]
+2018-03-26 09:45:51.905 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-03-26 09:45:51.920 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-26 09:45:51.920 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-26 09:45:51.975 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-26 09:45:52.578 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-03-26 09:45:52.594 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-03-26 09:45:52.602 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-26 09:45:52.609 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2018-03-26 09:45:52.628 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-03-26 09:45:52.648 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-03-26 09:45:52.652 [main] INFO  com.Application - Started Application in 7.739 seconds (JVM running for 8.528)
+2018-03-26 09:45:55.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:45:59.285 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-26 09:45:59.285 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-26 09:45:59.305 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-03-26 09:45:59.348 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-03-26 09:45:59.382 [http-nio-8080-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-03-26 09:45:59.383 [http-nio-8080-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-03-26 09:45:59.383 [http-nio-8080-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-03-26 09:45:59.383 [http-nio-8080-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-03-26 09:45:59.387 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-03-26 09:45:59.387 [http-nio-8080-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-03-26 09:46:00.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:05.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:10.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:15.002 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:20.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:25.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:30.000 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:35.002 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:40.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
+2018-03-26 09:46:45.001 [pool-1-thread-1] INFO  com.componet.SchedulingTest - >>>>>>>>>>>>> scheduled test... 
