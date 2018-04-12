@@ -3,6 +3,7 @@ package com.controller;
 import com.bean.User;
 import com.service.impl.TestInterFaceImpl;
 import com.service.interfaces.TestInterFace;
+import com.service.interfaces.UserInterFace;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,11 +18,16 @@ public class RegisterController {
     @Autowired
     private TestInterFace testInterFace;
 
+    @Autowired
+    UserInterFace userInterFace;
+
     @RequestMapping (value = "registerdeal",method = RequestMethod.POST)
     public ModelAndView register(HttpServletRequest request, @RequestParam(value = "username",required = true)String name, @RequestParam(value = "password",required = true) String pwd ,
                                  @RequestParam(value = "sex")String sex, @RequestParam("phone")String phone, @RequestParam("email")String email) throws Exception {
         ModelAndView modelAndView=new ModelAndView();
         int id=-1;
+        if (name!=null)
+            name=new String(name.getBytes("gbk"),"utf-8");
             try {
                 id=testInterFace.findIdByName(name);
             }catch (Exception e){
@@ -30,6 +36,9 @@ public class RegisterController {
             if (id==0){//不存在该用户名
                 testInterFace.saveUser(name,pwd,sex,phone, email,new Integer(1));
                 logger.info("注册成功");
+                if (userInterFace.initUser(name)){
+                    logger.info("用户初始化成功");
+                }
                 User user =new User(name,pwd,sex,phone,1,email);
                 modelAndView.addObject(user);
                 modelAndView.setViewName("/login");
